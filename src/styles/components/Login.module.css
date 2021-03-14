@@ -1,0 +1,74 @@
+.loginContainer {
+  width: 38%;
+  height: 50%;
+  position: relative;
+
+  background-color: #fff;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer > h1 {
+  margin-bottom: 2rem;
+}
+
+.loginContainer > form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginContainer > form .loginInput {
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+.loginContainer > form .loginButton {
+  margin-top: 1rem;
+  height: 3rem;
+  width: 30%;
+}
+
+.registerLoginButton {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+
+  font-size: 1.1rem;
+  background: transparent;
+  border: 0;
+  color: darkslateblue;
+  outline: 0;
+
+  transition: all 0.3s ease;
+}
+
+.registerLoginButton:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .loginContainer {
+    width: 60%;
+  }
+
+  .loginContainer > form .loginInput {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .loginContainer {
+    width: 100%;
+    height: 90vh;
+  }
+  .loginContainer > form .loginButton {
+    width: 50%;
+  }
+}
